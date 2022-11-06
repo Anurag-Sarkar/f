@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Karla";
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  background-color: #d1dff2;
+}
+#main #nav {
+  font-family: "Karla";
+  color: white;
+  width: 100%;
+  align-items: center;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 7, 22);
+  height: 60px;
+}
+#main #nav h2 {
+  cursor: pointer;
+  font-size: 33px;
+  font-weight: 800;
+}
+#main #nav #buttons {
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+}
+#main #nav #buttons h4 {
+  transition: 0.2s;
+  padding: 7px 10px;
+  border-radius: 30px;
+}
+#main #nav #buttons h4:hover {
+  background-color: rgb(0, 132, 255);
+}
+#main #nav #buttons h4:active {
+  transform: translateY(2px);
+}
+#main #box {
+  border-radius: 10px;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #000d2b;
+  top: 100px;
+}
+#main #box form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#main #box input {
+  color: white;
+  background-color: #000d2b;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  padding: 5px;
+  width: 80%;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+#main #box input::-moz-placeholder {
+  color: rgb(156, 156, 156);
+}
+#main #box input:-ms-input-placeholder {
+  color: rgb(156, 156, 156);
+}
+#main #box input::placeholder {
+  color: rgb(156, 156, 156);
+}
+#main #box #button {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+#main #box #button #submit {
+  background-color: rgb(145, 145, 145);
+}
+#main #box #button button {
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 40%;
+}
+#main #box #button button:hover {
+  background-color: rgb(0, 132, 255);
+}
+
+@media screen and (max-width: 600px) {
+  #main #nav {
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+  }
+  #main #nav h2 {
+    font-size: 20px;
+  }
+  #main #nav #buttons {
+    display: none;
+  }
+  #main #nav i {
+    font-size: 25px;
+    display: inherit;
+  }
+  #main #box {
+    height: 30%;
+    width: 90%;
+  }
+  #main #box form input {
+    font-size: 18px;
+  }
+  #main #box form input::-moz-placeholder {
+    color: rgb(161, 161, 161);
+  }
+  #main #box form input:-ms-input-placeholder {
+    color: rgb(161, 161, 161);
+  }
+  #main #box form input::placeholder {
+    color: rgb(161, 161, 161);
+  }
+  #main #box form #button button {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=add.css.map */

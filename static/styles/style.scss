@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    user-select: none;
+    overflow: hidden;
+    width:100%;
+    min-height:100%;
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: "Karla";
+        color: white;
+        width: 100%;
+        align-items: center;
+        padding: 0px 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(0, 7, 22);
+        height: 60px;
+        h2{
+            cursor: pointer;
+            font-size: 33px;
+            font-weight: 800;
+        }
+        #buttons{
+            cursor: pointer;
+            font-weight: 100;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            width: 270px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            h4{
+                transition: 0.2s;
+                padding: 7px 10px;
+                border-radius: 30px;
+                &:hover{
+                    
+                    background-color: rgb(0, 132, 255);
+                }
+                &:active{
+                    transform: translateY(2px);
+                }
+            }
+        }
+        i{
+            display: none;
+        }
+    }
+    #time{
+        font-family: "Gilroy";
+        height: 100%;
+        width: 100%;
+        #heading{
+            position: fixed;
+            top: 60px;
+            display: flex;
+            // justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            font-family: "Karla";
+            font-size: 25px;
+            font-weight: 700;
+            background-color: #d1dff2;
+            p{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+        #details{
+            margin-bottom: 50px;
+            margin-top: 100px;
+            width: 100%;
+            height: 100%;
+            #person{
+                font-family: "Karla";
+                display: flex;
+                padding: 20px;
+                font-size: 20px;
+                justify-content: space-around;
+
+                &:nth-child(even){
+                    background-color: #f3f8fe;
+                }
+
+                p{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+        }
+    }
+    #footer{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        align-items: center;
+        background-color: rgb(0, 7, 22);
+        color: white;
+        height: 50px;
+        width: 100%;
+        font-family: "Karla";
+        justify-content: space-between;
+        padding: 0px 40px;
+        p{
+            font-size: 18px;
+            border-radius: 30px;
+            padding: 5px 10px;
+            transition: 0.2s;
+            &:hover{
+                background-color: rgb(0, 132, 255);
+            }
+            &:active{
+                transform: translateY(2px);
+            }
+        }
+        h4 i{
+            color: white;
+        }
+    }
+}
+#o{
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 999;
+    transform: translate(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.888);
+    width: 100%;
+    height: 100%;
+    i{
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
+    #butt{
+        position: relative;
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 18px;
+        justify-content: space-between;
+        width: 270px;
+        a{
+            text-decoration: none;
+        }
+        h4{
+            text-align: center;
+            transition: 0.2s;
+            font-family: "Karla";
+            color: white;
+            transition: 0.2s;
+            padding: 25px 10px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            background-color: rgb(0, 132, 255);
+            
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #main{
+        #nav{
+            width: 100%;
+            height: 50px;
+            padding: 0px 20px;
+            h2{
+                font-size: 20px;
+            }
+            #buttons{
+                display: none;
+            }
+            i{
+                font-size: 25px;
+                display: inherit;
+            }
+        }
+        #time{
+            #heading{
+            width: 100%;
+            height: 30px;
+            margin-top: -10px;
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+        #time #details{
+            margin-bottom:40px;
+            margin-top: 80px;
+            #person{
+                font-size: 15px;
+                padding: 12px;
+            }
+        }
+    
+
+        #footer{
+            height: 40px;
+            padding: 0px 20px;
+            font-size: 11px;
+            p{
+                font-size: 12px;
+                padding: 5px 5px;
+                background-color: rgb(0, 132, 255);
+            }
+        }
+    }
+ }  
